@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font: 16px/26px 'Montserrat', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.dark_part {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+.header{
+    width: 1320px;
+    padding: 50px 0 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.right_header{
+    display: grid;
+    grid-template-columns: 478px;
+    grid-template-rows: 1fr 1fr;
+}
+.lng_box{
+    position: relative;
+}
+.lng{
+    position: relative;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    color: white;
+}
+.lng_box:after{
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #E6E6F0;
+}
+.selected_lng{
+    width: 33px;
+    height: 25px;
+    padding: 5px 7px;
+    background: #F0145A;
+    border-radius: 8px;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+}
+.address{
+    position: relative;
+    line-height: 20px;
+    color: white;
+    font-style: normal;
+}
+.address:after{
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #E6E6F0;
+}
+.tel{
+    position: relative;
+    color: white;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration-line: none;
+}
+.tel:after{
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #E6E6F0;
+}
+.right_head_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+.header_item{
+    padding: 15px;
+}
+.header_item:first-child{
+    padding-left: 0;
+}
+.header_item:last-child{
+    padding-right: 0;
+}
+.header_link{
+    color: white;
+    line-height: 20px;
+    font-weight: 700;
+    text-decoration-line: none;
+}
