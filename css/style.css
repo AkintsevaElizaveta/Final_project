@@ -361,3 +361,16 @@ body{
     display: inline-block;
     opacity: 0.2;
 }
+.clients_title{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px;
+}
+.clients_container{
+    width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,120px);
+}
