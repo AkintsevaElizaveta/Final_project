@@ -34,6 +34,7 @@ body{
     line-height: 15px;
     font-weight: 700;
     color: white;
+    margin-right: 6px;
 }
 .lng_box:after{
     content: '';
@@ -59,6 +60,7 @@ body{
 .address{
     position: relative;
     line-height: 20px;
+    padding: 0;
     color: white;
     font-style: normal;
 }
@@ -79,11 +81,16 @@ body{
     line-height: 20px;
     text-decoration-line: none;
 }
-.tel:after{
+.tel_box{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.tel_box:after{
     content: '';
     position: absolute;
     right: -12px;
-    top: 7px;
+    top: 9px;
     width: 6px;
     height: 6px;
     border-radius: 50%;
