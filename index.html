@@ -8,7 +8,7 @@
     <script src="js/jquery.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">x
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>hlegal</title>
 </head>
@@ -108,9 +108,76 @@
                 </div>
             </div>
         </div>
-        <div class="shadow_top"></div>
-        <div class="shadow_bot"></div>
-
+        <div class="light_part">
+            <div class="team">
+                <div class="slider">
+                    <div class="slider_item" id="active_item">
+                        <img src="images/team1.jpg" alt="first_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="slider_comment">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
+                            <p class="members_name">Олександр Олександровський</p>
+                            <p class="members_post">Керуючий партнер</p>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="minusSlide()"></a>
+                    <a class="next" onclick="plusSlide()"></a>
+                    <div class="slider_item">
+                        <img src="images/Team-2.jpg" alt="second_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="slider_comment">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
+                            <p class="members_name">Евгений Патриков</p>
+                            <p class="members_post">Пайовий партнер, адвокат</p>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="images/Team-3.jpg" alt="third_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="slider_comment">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
+                            <p class="members_name">Vladislav Melnik</p>
+                            <p class="members_post">Партнер</p>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="images/Team-4.jpg" alt="first_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="slider_comment">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
+                            <p class="members_name">Sergey Binn</p>
+                            <p class="members_post">Партнер</p>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <img src="images/Team-5.jpg" alt="first_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="slider_comment">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
+                            <p class="members_name">Oksana Kobzar</p>
+                            <p class="members_post">Пайовий партнер, адвокат</p>
+                        </div>
+                    </div>
+                    <div class="slider_item" id="showing_item">
+                        <img src="images/Team-6.jpg" alt="first_slider" class="slider_img">
+                        <div class="slider_description">
+                            <h3 class="slider_title">КОМАНДА</h3>
+                            <strong class="slider_comment">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</strong>
+                            <p class="members_name">Julia Wolk</p>
+                            <p class="members_post">Партнер, юрист</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="slider_dots">
+                <span class="slider_dots_item" onclick="currentSlide(1)"></span>
+                <span class="slider_dots_item" onclick="currentSlide(2)"></span>
+                <span class="slider_dots_item" onclick="currentSlide(3)"></span>
+                <span class="slider_dots_item" onclick="currentSlide(4)"></span>
+                <span class="slider_dots_item" onclick="currentSlide(5)"></span>
+                <span class="slider_dots_item" onclick="currentSlide(6)"></span>
+            </div>
+            </div>
+        </div>
     </div>
 
 </body>
