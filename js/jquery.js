@@ -11,33 +11,44 @@ function clickHandle(evt, itemExperience) {
     document.getElementById(itemExperience).style.display = "block";
     evt.currentTarget.className += " active";
 }
-var slideIndex = 1;
-    showSlides(slideIndex);
-function plusSlide( ){
-    showSlides(slideIndex += 1);
+
+let selectedSlide = 0
+
+startChanging();
+
+function showSlide(n) {
+    let slides = document.getElementsByClassName("slider_item");
+
+    if (n > slides.length - 1) {
+        n = 0;
+    }
+
+    selectedSlide = n
+
+    for (let i = 0; i < slides.length; i++){
+        slides[i].style.display = i === selectedSlide ? "grid" : "none";
+    }
+
+    let dots = document.getElementsByClassName("slider_dots_item");
+
+    for (let i = 0; i < slides.length; i++){
+        if (i === selectedSlide) {
+            dots[i].className = "slider_dots_item slider_dots_item_active"
+        } else {
+            dots[i].className = "slider_dots_item"
+        }
+    }
 }
-function minusSlide( ){
-    showSlides(slideIndex -=1);
+
+function startChanging() {
+    let time = 3000 // 3s
+
+    showSlide(selectedSlide)
+
+    setInterval(nextSlide, time)
 }
-function currentSlide(n){
-    showSlides(slideIndex = n);
-}
-function showSlides(n){
-    var i;
-    var slides=document.getElementsByClassName("slider_item");
-    var dots=document.getElementsByClassName("slider_dots_item");
-    if (n>slides.length) {
-        slideIndex=1
-    }
-    if (n>1){
-        slideIndex=slides.length
-    }
-    for (i=0; i< slides.length; i++){
-        slides[i].style.display="none";
-    }
-    for (i=0; i< dots.length; i++){
-        dots[i].className = dots[i].className.replace("active", "");
-    }
-    slides[slideIndex -1].style.display="block";
-    dots[slideIndex -1].className += "active";
+
+function nextSlide() {
+    selectedSlide++;
+    showSlide(selectedSlide)
 }

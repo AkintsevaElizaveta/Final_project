@@ -5,7 +5,6 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/jquery.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -30,21 +29,21 @@
                       </div>
                         <nav class="header_menu">
                             <ul class="header_list">
-                                <li class="header_item"><a href="" class="header_link">about us</a></li>
-                                <li class="header_item"><a href="" class="header_link">services</a></li>
-                                <li class="header_item"><a href="" class="header_link">team</a></li>
-                                <li class="header_item"><a href="" class="header_link">publications</a></li>
+                                <li class="header_item"><a href="#about_anchor" class="header_link">about us</a></li>
+                                <li class="header_item"><a href="#services_anchor" class="header_link">services</a></li>
+                                <li class="header_item"><a href="#team_anchor" class="header_link">team</a></li>
+                                <li class="header_item"><a href="#publication_anchor" class="header_link">publications</a></li>
                                 <li class="header_item"><a href="" class="header_link">contact</a></li>
                             </ul>
                         </nav>
                     </div>
                 </header>
                 <h1 class="home_title">you legal solutions provider</h1>
-                <button class="scroll_btn"><a href="#scrolldown"><svg class="scroll_img" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="scroll_btn"><a href="#about_anchor"><svg class="scroll_img" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 1L10 10L19 1" stroke="white" stroke-width="2"/>
                 </svg></a></button>
             </div>
-            <div class="experience" id="scrolldown">
+            <div class="experience" id="about_anchor">
                 <div class="tab">
                     <button class="tab_btn" onclick="clickHandle(event, 'Consistent')" autofocus>Consistent</button>
                     <button class="tab_btn" onclick="clickHandle(event, 'Customer_oriented')">Customer oriented</button>
@@ -68,7 +67,7 @@
                     <p class="content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos earum eos inventore iure, laudantium mollitia nisi placeat possimus sit ullam. Amet consequuntur esse facere molestias, nisi quia repudiandae suscipit? Impedit!</p>
                 </div>
             </div>
-            <div class="services">
+            <div class="services" id="services_anchor">
                 <h3 class="services_title">Services</h3>
                 <strong class="services_top_text">What can we do better than others?</strong>
                 <div class="services_container">
@@ -109,7 +108,7 @@
             </div>
         </div>
         <div class="light_part">
-            <div class="team">
+            <div class="team" id="team_anchor">
                 <div class="slider">
                     <div class="slider_item" id="active_item">
                         <img src="images/team1.jpg" alt="first_slider" class="slider_img">
@@ -158,7 +157,7 @@
                             <p class="members_post">Пайовий партнер, адвокат</p>
                         </div>
                     </div>
-                    <div class="slider_item" id="showing_item">
+                    <div class="slider_item">
                         <img src="images/Team-6.jpg" alt="first_slider" class="slider_img">
                         <div class="slider_description">
                             <h3 class="slider_title">КОМАНДА</h3>
@@ -169,12 +168,12 @@
                     </div>
                 </div>
             <div class="slider_dots">
-                <span class="slider_dots_item" onclick="currentSlide(1)"></span>
-                <span class="slider_dots_item" onclick="currentSlide(2)"></span>
-                <span class="slider_dots_item" onclick="currentSlide(3)"></span>
-                <span class="slider_dots_item" onclick="currentSlide(4)"></span>
-                <span class="slider_dots_item" onclick="currentSlide(5)"></span>
-                <span class="slider_dots_item" onclick="currentSlide(6)"></span>
+                <span class="slider_dots_item" onclick="showSlide(0)"></span>
+                <span class="slider_dots_item" onclick="showSlide(1)"></span>
+                <span class="slider_dots_item" onclick="showSlide(2)"></span>
+                <span class="slider_dots_item" onclick="showSlide(3)"></span>
+                <span class="slider_dots_item" onclick="showSlide(4)"></span>
+                <span class="slider_dots_item" onclick="showSlide(5)"></span>
             </div>
             </div>
             <div class="clients">
@@ -218,8 +217,44 @@
                     </a>
                 </div>
             </div>
+            <div class="publication" id="publication_anchor">
+               <div class="publication_container">
+                   <h3 class="publication_title">Publications</h3>
+                   <strong class="publication_top_text">We have something to tell</strong>
+                   <div class="publication_cards">
+                       <ul class="card_list">
+                           <li class="card_item">
+                               <img src="images/card1.png" alt="" class="card_img">
+                              <div class="card_text_box">
+                                  <h4 class="card_title">Equity associate</h4>
+                                  <span class="card_date">April 22</span>
+                                  <p class="card_text">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
+                              </div>
+                           </li>
+                           <li class="card_item">
+                               <img src="images/card2.png" alt="" class="card_img">
+                            <div class="card_text_box">
+                                <h4 class="card_title">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
+                                <span class="card_date">September 29</span>
+                                <p class="card_text">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
+                            </div>
+                           </li>
+                           <li class="card_item">
+                               <img src="images/card3.png" alt="" class="card_img">
+                            <div class="card_text_box">
+                                <h4 class="card_title">Millennial Testament</h4>
+                                <span class="card_date">August 19</span>
+                                <p class="card_text">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
+                            </div>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+            </div>
         </div>
     </div>
+
+    <script src="js/jquery.js"></script>
 
 </body>
 </html>
