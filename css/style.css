@@ -5,6 +5,13 @@ body{
     margin: 0;
     font: 16px/26px 'Montserrat', sans-serif;
 }
+a{
+    text-decoration-line: none;
+    color: #24A3FF;
+}
+a:hover{
+    color: #F0145A;
+}
 .wrapper{
     width: 100%;
     /*overflow: hidden;*/
@@ -456,9 +463,79 @@ body{
     width: 360px;
     height: 2px;
     background: #B3B3BA;
-
 }
 .card_text{
     font-size: 14px;
     line-height: 22px;
+}
+.footer{
+    width: 100%;
+    background: #F5F5FA;
+}
+.footer_container{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-top: 2px solid #E6E6F0;
+}
+.top_footer{
+    margin-bottom: 20px;
+}
+.footer_container__address{
+    display: inline-block;
+    color: #323264;
+}
+.footer_container__address:after{
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #B3B3BA;
+}
+.on_map{
+    font-size: 12px;
+    line-height: 15px;
+    color: #24A3FF;font-weight: 700;
+    padding: 0 15px;
+}
+.bottom_footer{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.facebook_bottom{
+    position: relative;
+}
+.facebook_bottom:after {
+    content: '';
+    position: absolute;
+    right: -16px;
+    top: 19px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #B3B3BA;
+}
+.bottom_footer__tel{
+    color: #46466E;
+}
+.bottom_footer__tel:after{
+    content: '';
+    position: absolute;
+    right: -16px;
+    top: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #B3B3BA;
+}
+.email_footer{
+    line-height: 20px;
+    color: #24A3FF;
+    font-weight: 700;
+    margin: 0;
 }
