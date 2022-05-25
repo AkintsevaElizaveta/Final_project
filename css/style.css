@@ -8,6 +8,7 @@ body{
 a{
     text-decoration-line: none;
     color: #24A3FF;
+    transition: 500ms;
 }
 a:hover{
     color: #F0145A;
@@ -64,14 +65,25 @@ a:hover{
     grid-template-columns: 478px;
     grid-template-rows: 1fr 1fr;
 }
+.facebook{
+    transition: 500ms;
+}
+.facebook:hover{
+    fill: #24A3FF;
+}
 .lng_box{
     position: relative;
 }
 .lng{
+    cursor: pointer;
     position: relative;
     font-size: 12px;
     line-height: 15px;
     font-weight: 700;
+    color: white;
+    transition: 500ms;
+}
+.lng:hover{
     color: white;
 }
 .lng_box:after{
@@ -154,6 +166,10 @@ a:hover{
     font-weight: 700;
     text-decoration-line: none;
 }
+.header_link:hover{
+    border-bottom: 2px solid #F0145A ;
+
+}
 .home_title{
     font-size: 38px;
     line-height: 46px;
@@ -171,16 +187,22 @@ a:hover{
     position: relative;
     margin-bottom: 30px;
 }
+.scroll_btn:after{
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(45deg);
+}
 .scroll_btn:hover{
     border-color: #F0145A;
 }
-.scroll_btn:hover .scroll_img{
-    color: #F0145A;
-}
-.scroll_img{
-    position: absolute;
-    top: 13px;
-    right: 9px;
+.scroll_btn:hover:after{
+    border-color: #F0145A;
 }
 .experience{
     width: 1080px;

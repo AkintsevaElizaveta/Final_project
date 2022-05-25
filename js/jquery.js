@@ -52,3 +52,13 @@ function nextSlide() {
     selectedSlide++;
     showSlide(selectedSlide)
 }
+
+function changeLanguage(index){
+    //selected_lng
+    let langBtn = document.getElementsByClassName("lng");
+    for (i = 0; i < langBtn.length; i++){
+        langBtn[i].className = 'lng';
+    }
+
+   langBtn[index].className += ' selected_lng'
+}
